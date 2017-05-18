@@ -1,0 +1,13 @@
+<% include header %>
+<div id="content">
+
+<h1><a href="/blog"><< back to</a></h1>
+<h3>Personal site of <a href="/about">Thomas Borms</a></h3>
+
+<h3>posted <%- post.date %></h3>
+<h2><span><%- post.title %></span> :</h2>
+<article>
+  <%- post.body %>
+</article>
+</div>
+<% include footer %>

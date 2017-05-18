@@ -1,0 +1,21 @@
+<% include header %>
+<div id="content">
+
+<h1>Thomas<strong>_</strong><strong>Borms</strong></h1>
+<h3>Personal site of <a href="/about">Thomas Borms</a></h3>
+
+<section>
+  <% var teller = 1; %>
+  <% posts.forEach(function(post){ %>
+    <p>
+      <%- post.date %> :
+      <a class="post-link" href="<%- post.slug %>"><%- post.title %></a>
+      &mdash; <%- post.summary %>
+    </p>
+    <% if (teller !== posts.length) { %>
+    <span class="divider">* * * * *</span>
+    <% } %>
+  <% teller++;}); %>
+</section>
+</div>
+<% include footer %>

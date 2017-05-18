@@ -1,0 +1,20 @@
+<% include header %>
+
+
+    <div id="site_content">
+        <div id="content">
+            <h2>Street Vision Instagram :</h2>
+
+            <section class="instagram">
+                <% afbeeldingen.forEach(function(afbeelding){ %>
+                    <figure>
+                        <a href="https://www.instagram.com/p/<%- afbeelding.id %>/?taken-by=streets_vision"><img src="<%- afbeelding.media %>" alt="alt text" ></a>
+                        
+                    </figure>
+                    <% }); %>
+            </section>
+        </div>
+    </div>
+
+
+<% include footer %>
